@@ -286,12 +286,14 @@ ul li {
     color: var(--text-color);
 }
 
-.hero-btn-container {
+.home-btn-container {
+    border: 1px solid #fff;
 	margin-block-start: 1.5rem;
 	display: flex;
+    align-items: center;
 }
 
-.hire-btn {
+.cv-btn {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	display: inline-block;
@@ -306,7 +308,7 @@ ul li {
 	overflow: hidden;
 }
 
-.hire-btn::before {
+.cv-btn::before {
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -321,12 +323,12 @@ ul li {
 	transition: transform 0.45s ease-in-out;
 }
 
-.hire-btn:hover {
+.cv-btn:hover {
 	cursor: pointer;
 	color: hsl(0, 0%, 9%);
 }
 
-.hire-btn:hover::before {
+.cv-btn:hover::before {
 	transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 }
 
@@ -652,6 +654,10 @@ ul li {
 
     .home-section .home-img-container {
         display: none;
+    }
+
+    .home-btn-container {
+    justify-content: center;
     }
 
 }
