@@ -1,3 +1,4 @@
+// responsive nav
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-list");
     const menuIcon = document.querySelector(".menu-icon");
@@ -26,11 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// date
 const date = document.getElementById('date')
 const setCurrentYear = () => {
-	const currentYear = new Date().getFullYear()
-	date.textContent = currentYear
+    const currentYear = new Date().getFullYear()
+    date.textContent = currentYear
 }
 setCurrentYear()
 
